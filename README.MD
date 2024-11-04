@@ -58,13 +58,13 @@ Tools: Prometheus & Grafana
 
 # Class Diagram
 
-![ClassDiagram1.png](ClassDiagram1.png)
+![ClassDiagram1.jpg](ClassDiagram1.jpg)
 
 ---
 
 # ER Diagram
 
-![ERDiagram1.png](ERDDiagram1.png)
+![ERDiagram1.jpg](ERDDiagram1.jpg)
 
 
 ---
