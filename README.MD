@@ -7,10 +7,6 @@ The application will be containerized using Docker and deployed on Kubernetes.
 
 ---
 
-# Architecture
-
-![img.png](img.png)
-
 ### **Components Overview**
 
 1. Frontend:
@@ -28,31 +24,16 @@ Technology: Python with Flask
 - Interface with the Notification Service via a message queue
 
 3. Notification Service:
-Technology: Python (using Celery for task management)
-- Consume alert messages from the message queue
-- Send notifications via email (using SendGrid) or SMS (using Twilio)
-- Handle retries and error logging for failed notifications
+Technology: Python
+- Send notifications via to UI via Toastify
 
 4. Database:
-Technology: PostgreSQL
+Technology: MariaDB
 - Store user data, alert settings, and alert history
 - Ensure efficient querying for alert triggering
 
-5. Message Queue:
-Technology: RabbitMQ
-- Facilitate asynchronous communication between the Backend and Notification Service
-- Ensure reliable message delivery and processing
-
-6. Deployment:
-Technology: Kubernetes
-- Orchestrate containerized services
-- Implement auto-scaling, load balancing, and health monitoring
-- Manage secrets and configuration using Kubernetes Secrets and ConfigMaps
-
-7. Monitoring & Logging:
-Tools: Prometheus & Grafana
-- Collect and visualize metrics
-- Aggregate and analyze logs for troubleshooting and performance tuning
+5. Deployment:
+Technology: Docker, AWS
 
 ---
 

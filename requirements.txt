@@ -1,0 +1,8 @@
+flask
+finnhub-python
+websocket
+flask-redis
+flask-sqlalchemy
+pyfcm
+requests
+pymysql
