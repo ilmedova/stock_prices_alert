@@ -8,11 +8,11 @@ from flask_cors import cross_origin
 
 auth_bp = Blueprint('auth_bp', __name__)
 
-@auth_bp.route('/example', methods=['GET'])
+@auth_bp.route('/api/example', methods=['GET'])
 def example():
     return "Hello world"
 
-@auth_bp.route('/register', methods=['POST'])
+@auth_bp.route('/api/register', methods=['POST'])
 @cross_origin
 def register():
     data = request.json
