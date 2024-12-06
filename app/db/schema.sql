@@ -1,13 +1,13 @@
 # CREATE DATABASE stock_notifications;
 
-# USE stock_notifications;
+USE stock_notifications;
 
-# CREATE TABLE users (
-#     id INT AUTO_INCREMENT PRIMARY KEY,
-#     username VARCHAR(255) UNIQUE NOT NULL,
-#     password VARCHAR(255) NOT NULL,
-#     firebase_token TEXT NOT NULL
-# );
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    firebase_token TEXT NOT NULL
+);
 
 CREATE TABLE UserStock (
     id INT AUTO_INCREMENT PRIMARY KEY,          -- Unique identifier for each entry

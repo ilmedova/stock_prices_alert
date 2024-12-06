@@ -13,7 +13,7 @@ def register():
     data = request.json
     username = data.get('username')
     password = data.get('password')
-    firebase_token = data.get('firebaseToken')
+    firebase_token = 'firebaseToken'
 
     if not username or not password or not firebase_token: return jsonify({"message": "Missing required fields"}), 400
 
