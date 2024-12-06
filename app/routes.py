@@ -8,6 +8,10 @@ import os
 
 auth_bp = Blueprint('auth_bp', __name__)
 
+@auth_bp.route('/example', methods=['GET'])
+def example():
+    return "Hello world"
+
 @auth_bp.route('/register', methods=['POST'])
 def register():
     data = request.json
