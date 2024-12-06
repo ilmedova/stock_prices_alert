@@ -4,7 +4,6 @@ from app import db
 import bcrypt
 import jwt
 import datetime
-from flask_cors import cross_origin
 
 auth_bp = Blueprint('auth_bp', __name__)
 
@@ -13,7 +12,6 @@ def example():
     return "Hello world"
 
 @auth_bp.route('/api/register', methods=['POST'])
-@cross_origin
 def register():
     data = request.json
     username = data.get('username')
