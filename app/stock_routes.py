@@ -15,7 +15,7 @@ def get_user_id_from_token():
     return decoded["user_id"]
 
 
-@stock_bp.route("/user/stocks", methods=["GET"])
+@stock_bp.route("/api/user/stocks", methods=["GET"])
 def get_user_stocks():
     user_id = get_user_id_from_token()
     if not user_id:
@@ -26,7 +26,7 @@ def get_user_stocks():
     return jsonify(selected_symbols)
 
 
-@stock_bp.route("/user/stocks", methods=["POST"])
+@stock_bp.route("/api/user/stocks", methods=["POST"])
 def add_user_stock():
     user_id = get_user_id_from_token()
     if not user_id:
@@ -49,7 +49,7 @@ def add_user_stock():
     return jsonify(selected_symbols)
 
 
-@stock_bp.route("/user/stocks/<string:stock_symbol>", methods=["DELETE"])
+@stock_bp.route("/api/user/stocks/<string:stock_symbol>", methods=["DELETE"])
 def remove_user_stock(stock_symbol):
     user_id = get_user_id_from_token()
     if not user_id:
