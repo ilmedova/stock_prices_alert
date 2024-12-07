@@ -5,8 +5,7 @@ USE stock_notifications;
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    firebase_token TEXT NOT NULL
+    password VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE UserStock (
@@ -19,3 +18,4 @@ CREATE TABLE UserStock (
     FOREIGN KEY (user_id) REFERENCES users(id)  -- Assuming 'Users' table has 'id' as primary key
 );
 
+alter table users drop column firebase_token;

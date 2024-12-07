@@ -3,12 +3,17 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-def create_app():
+def create_app(config_name=None):
     app = Flask(__name__)
 
-    # Database configuration
+    # Default configuration
     app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:qazwsx12@localhost/stock_notifications"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+    # Load testing configuration if specified
+    if config_name == "testing":
+        app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///:memory:"  # Use in-memory SQLite for testing
+        app.config['TESTING'] = True
 
     db.init_app(app)
 

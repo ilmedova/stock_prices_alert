@@ -6,3 +6,7 @@ flask-sqlalchemy
 pyfcm
 requests
 pymysql
+PyJWT
+bcrypt
+pytest
+pytest-flask
