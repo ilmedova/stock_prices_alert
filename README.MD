@@ -15,14 +15,12 @@
 - [X] [Software Deployment on Cloud](#software-deployment-on-cloud)
 - [X] [Documentation](#rubric-and-documentation-contents)
 - [X] Code Quality and Best Practices
-- [X] Video Presentation
+- [X] [Video Presentation](#video-presentation)
 
 # Problem Statement
 
 Real-time Stock Price Alert Service is a web based application designed to provide users with real-time tracking of stock prices and send alerts based on user-defined thresholds. 
-The primary objective is to enable users to receive timely notifications (via email or SMS) when a stock's price crosses a specified threshold, aiding them in making informed financial decisions promptly.
-
-The application will be containerized using Docker and deployed on Kubernetes.
+The primary objective is to enable users to receive timely notifications (via user interface) when a stock's price crosses a specified threshold.
 
 ---
 
@@ -192,7 +190,7 @@ Both back-end and front-end are dockerized
 
 # CI/CD Pipeline
 
-Implemented Githbu Actions for running the test automatically everytime any updates being pushed to main branch
+Implemented Github Actions for running the test automatically everytime any updates being pushed to main branch
 
 ---
 
@@ -203,6 +201,8 @@ Demo can be accessed using the link: http://3.145.91.198/
 
 ---
 
-# Presentation and Video
+# Video Presentation
 
-Video Presentation Link: 
+Video Presentation Link:
+
+https://drive.google.com/file/d/1zVbTDK-IehaN_YTo6XQ8HMz6GzbKRuTr/view?usp=sharing
