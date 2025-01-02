@@ -1,7 +1,7 @@
 from app.models import db, UserStock
 import jwt
 
-SECRET_KEY = "qazwsx12"  # Replace with a secure key
+SECRET_KEY = "YOUR_SECRET_KEY"  # Replace with a secure key
 
 
 class StockService:
